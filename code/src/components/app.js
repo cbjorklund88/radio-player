@@ -23,13 +23,24 @@ class App extends React.Component {
   render() {
     if (this.state.radioItems.length > 0) {
       return (
-        this.state.radioItems.map((channel) => {
-          return <Station
-            image={channel.image}
-            name={channel.name}
-            tagline={channel.tagline}
-            audio={channel.liveaudio.url} />
-        })
+        <div>
+          <div className="header-info">
+            <img src="./sr-logo.jpg" alt="sr-logo" className="sr-logo" />
+          </div>
+          <div className="radioPlayer">
+            {this.state.radioItems.map((channel) => {
+              return (
+                <Station
+                  image={channel.image}
+                  name={channel.name}
+                  tagline={channel.tagline}
+                  audio={channel.liveaudio.url}
+                  color={channel.color} />
+              )
+            })}
+          </div>
+          <footer />
+        </div>
       )
     } else {
       return <div>Loading...</div>

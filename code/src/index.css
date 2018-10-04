@@ -25,6 +25,8 @@ footer {
 .header-info {
   border-bottom: 1px solid #FFF;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .sr-image {
@@ -33,6 +35,12 @@ footer {
 }
 
 .search-input {
+  outline: none;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
 
 }
 

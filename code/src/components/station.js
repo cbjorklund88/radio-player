@@ -5,14 +5,14 @@ class Station extends React.Component {
   render() {
     return (
 
-      <div className="station">
-
-        <h2>{this.props.title}</h2>
+      <div className="Station">
         <img className="image-box" src={this.props.image} alt="Station" />
-        <p>{this.props.type}</p>
-        <p>{this.props.substance}</p>
-        <p>{this.props.size}</p>
-        <p>{this.props.numberInPack}</p>
+        <h2>{this.props.name}</h2>
+        <p>{this.props.tagline}</p>
+        <audio controls>
+          <source src={this.props.audio}type="audio/mpeg" />
+          Your browser does not support the audio tag.
+        </audio>
 
       </div>
 

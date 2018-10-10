@@ -24,8 +24,10 @@ class App extends React.Component {
         <div>
           <div className="header-info">
             <img src="./sr-image.jpg" alt="sr-logo" className="sr-image" />
-            <input type="text" placeholder="Sök.."className="search-input" />
-            <button type="button">SÖK</button>
+            <div className="search-field">
+              <input type="text" placeholder="Sök.."className="search-input" />
+              <button type="button">SÖK</button>
+            </div>
           </div>
           <div className="radioPlayer">
             {this.state.radioItems.map((channel) => {

@@ -14,10 +14,12 @@ class Station extends React.Component {
         <div className="radioContent">
           <h2>{this.props.name}</h2>
           <p>{this.props.tagline}</p>
-          <audio controls>
-            <source src={this.props.audio}type="audio/mpeg" />
+          <div className="audio-player">
+            <audio controls>
+              <source src={this.props.audio}type="audio/mpeg" />
           Your browser does not support the audio tag.
-          </audio>
+            </audio>
+          </div>
         </div>
 
       </div>

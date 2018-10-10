@@ -16,6 +16,13 @@ p {
   margin: 30px 30px;
 }
 
+button {
+  border-radius: 10px;
+  padding: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
 footer {
   border-top: 1px solid #FFFF;
   height: 50px;
@@ -23,10 +30,18 @@ footer {
 }
 
 .header-info {
+  width: 100%;
   border-bottom: 1px solid #FFF;
   margin-bottom: 30px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
+}
+
+.search-field {
+  display: flex;
+  margin-right: 100px;
 }
 
 .sr-image {
@@ -36,14 +51,12 @@ footer {
 
 .search-input {
   outline: none;
-  padding: 6px;
-  margin-top: 8px;
   margin-right: 16px;
   border: none;
-  font-size: 17px;
-
+  font-size: 14px;
+  width: 450px;
+  padding-left: 15px;
 }
-
 
 .image-box {
   width: 256px;
@@ -58,9 +71,38 @@ footer {
 }
 
 .Station {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   width: calc(33.33% - 20px);
   margin: 10px;
   box-sizing: border-box;
   text-align:center;
+}
+
+.image-box {
+  width: 100%;
+  object-fit: contain;
+}
+
+.audio-player {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+}
+@media (max-width: 600px) {
+  .Station {
+    width: 100%;
+  }
+  .header-info{
+    width: 50%;
+  }
+  .search-input {
+    font-size: 10px;
+    width: 300px;
+    padding-left: 15px;
+  }
+  .search-field {
+    margin-right: 50px;
+  }
 }

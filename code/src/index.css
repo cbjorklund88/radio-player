@@ -90,19 +90,32 @@ footer {
   justify-content: center;
   height: 80px;
 }
-@media (max-width: 600px) {
+@media (min-width: 600px) and (max-width: 900px){
   .Station {
-    width: 100%;
-  }
-  .header-info{
-    width: 50%;
-  }
-  .search-input {
-    font-size: 10px;
-    width: 300px;
-    padding-left: 15px;
+    width: calc(50% - 20px);
   }
   .search-field {
-    margin-right: 50px;
+    margin-left:20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Station {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .search-input {
+    width: 250px;
+  }
+  .search-field {
+    margin-bottom: 20px;
+    margin-right: 0;
   }
 }

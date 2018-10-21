@@ -33,6 +33,7 @@ class App extends React.Component {
             {this.state.radioItems.map((channel) => {
               return (
                 <Station
+                  key={channel.id}
                   image={channel.image}
                   name={channel.name}
                   tagline={channel.tagline}
